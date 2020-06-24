@@ -37,12 +37,12 @@ body {
 }
 .headerImage {
   width: 100%;
-  height: 93vh;
+  height: 90vh;
 }
 @media screen and (max-width: 55px) {
   .headerImage {
     width: 100%;
-    height: 93vh;
+    height: unset;
   }
 }
 
@@ -382,6 +382,12 @@ h6 {
 .mainTitle {
   font-size: 48px;
 }
+.mainTitle2{
+  font-weight: 800;
+  font-size: 55px;
+  letter-spacing: 3px;
+  color: #333;
+}
 .carouselText {
   margin: 130px 0px 0px;
 }
@@ -416,10 +422,6 @@ h6 {
   color: white;
 }
 .ML-Slider {
-  color: black !important;
-  font-size: 20px;
-  font-weight: 900;
-  font-family: "Open Sans", sans-serif;
   text-align: left;
 }
 
@@ -467,4 +469,19 @@ section {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+.carousel-item{
+  height: 90vh;
+}
+.mt-95{
+  margin-top: 95px;
+}
+.backgroundSupportImg{
+ position: absolute;
+ width: 330px;
+ bottom: 94px;
+ right: 45px;
+ opacity: 0.2;
+ z-index: -1;
+  
 }
