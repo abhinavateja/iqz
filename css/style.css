@@ -37,7 +37,7 @@ body {
 }
 .headerImage {
   width: 100%;
-  height: 90vh;
+  height: 93vh;
 }
 @media screen and (max-width: 55px) {
   .headerImage {
@@ -98,11 +98,8 @@ body {
   left: 15%;
 }
 
-#container-fluid-main {
-  color: #f5deb3;
-}
 
-#fluid-main-text {
+.fluid-main-text {
   margin-top: 96px;
   margin-bottom: 60px;
 }
@@ -374,27 +371,50 @@ h6 {
   height: 100%;
   background: #031f3f;
   position: absolute;
-  top: 0;
+  top: -2px;
 }
 .carousel-caption {
   bottom: 30%;
+  text-align: left;
+}
+.carousel-caption.slideThree{
+  /* bottom: 40%; */
+  text-align: left;
 }
 .mainTitle {
   font-size: 48px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 0px;
 }
 .mainTitle2{
   font-weight: 800;
-  font-size: 55px;
+  font-size: 4vw;
   letter-spacing: 3px;
-  color: #333;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 0px;
+}
+.header-name:hover{
+color: #ecf0f1;
+}
+.fs-42{
+  font-size: 42px;
+}
+.carousel-indicators li{
+  background-color: #95a5a6;
 }
 .carouselText {
-  margin: 130px 0px 0px;
+  margin: 15% 0% 0% 10%;
+}
+.mt34{
+  margin: 34% 0% 0%;
 }
 .carousel-caption button {
   width: 50%;
-  border-radius: 25px;
-  margin-top: 15px;
+    padding: 12px 5px;
+    margin: 30px 0px 0px;
 }
 
 .info-icon {
@@ -408,6 +428,7 @@ h6 {
   background-image: url("../img/ASIC-Jumbotron.png");
   color: white;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 80px;
 }
 
 .Jumbotron-Header {
@@ -423,11 +444,14 @@ h6 {
 }
 .ML-Slider {
   text-align: left;
+  font-size: 1.25vw;
+  color: black;
+}
+.ML-Slider-text{
+  font-size: 20px;
+  line-height: 34px;
 }
 
-section {
-  padding: 60px 0;
-}
 
 #tabs h6.section-title {
   color: black;
@@ -464,24 +488,49 @@ section {
   display: block;
 }
 .overlay {
-  height: 44.5vh;
+  height: 25.5vh;
   width: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 .carousel-item{
-  height: 90vh;
+  height: 93vh;
 }
 .mt-95{
-  margin-top: 95px;
+  margin-top: 60%;
 }
 .backgroundSupportImg{
  position: absolute;
- width: 330px;
- bottom: 94px;
- right: 45px;
+ width: 500px;
+ bottom: 3px;
+ right: 15px;
  opacity: 0.2;
  z-index: -1;
-  
+}
+.backgroundSupportImg1{
+  position: absolute;
+  width: 400px;
+  left: -210px;
+  opacity: 0.1;
+  z-index: -1;
+  top: 210px;
+}
+.backgroundSupportImg2{
+  position: absolute;
+ width: 300px;
+ bottom: 110px;
+ right: 15px;
+ opacity: 0.2;
+ z-index: -1;
+}
+.b-lightgrey{
+  background-color: #fafafa;
+}
+.container-fluid-main{
+padding: 30px 15px;
+}
+.fluid-main-text .ML-Slider{
+  font-size: 1.8vw;
+  line-height: 44px;
 }
