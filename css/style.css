@@ -692,3 +692,27 @@ section {
   text-align: left;
   padding-bottom: 20px;
 }
+.ML-Jumbo {
+  background-image: url(../img/ML_Jumbo2.png);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 400px;
+}
+
+.ML {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.MLandAI .card:after {
+  content: "ML & AI";
+  position: absolute;
+  top: 30%;
+  left: -2%;
+  font-size: 8em;
+  font-weight: 800;
+  color: white;
+}
