@@ -37,7 +37,7 @@ body {
 }
 .headerImage {
   width: 100%;
-  height: 93vh;
+  height: 90vh;
 }
 @media screen and (max-width: 55px) {
   .headerImage {
@@ -98,13 +98,22 @@ body {
   left: 15%;
 }
 
+#container-fluid-main {
+  color: #f5deb3;
+}
 
-.fluid-main-text {
+#fluid-main-text {
   margin-top: 96px;
   margin-bottom: 60px;
 }
 
+#Main-Video {
+  margin-top: 20px;
+}
 
+.video {
+  height: 600px;
+}
 
 .Fourth-Image {
   margin-left: 19px;
@@ -119,7 +128,7 @@ body {
   margin-top: 15px;
 }
 
-.Fifth-Section-Image {
+.Sixth-Section-Image {
   margin-top: 15px;
 }
 
@@ -130,14 +139,11 @@ body {
   }
 }
 
-.Sixth-Section-Image {
-  margin-top: 15px;
-}
-
 @media screen and (max-width: 1440px) {
   .Sixth-Section-Image {
     width: 100%;
     height: 100%;
+    padding-bottom: 50px;
   }
 }
 
@@ -365,50 +371,27 @@ h6 {
   height: 100%;
   background: #031f3f;
   position: absolute;
-  top: -2px;
+  top: 0;
 }
 .carousel-caption {
   bottom: 30%;
-  text-align: left;
-}
-.carousel-caption.slideThree{
-  /* bottom: 40%; */
-  text-align: left;
 }
 .mainTitle {
   font-size: 48px;
-    text-align: left;
-    font-weight: 600;
-    line-height: 60px;
-    color: rgba(0,0,0,0.5);
-    margin-bottom: 0px;
 }
-.mainTitle2{
+.mainTitle2 {
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 55px;
   letter-spacing: 3px;
-  color: rgba(0,0,0,0.5);
-  margin-bottom: 0px;
-}
-.header-name:hover{
-color: #ecf0f1;
-}
-.fs-42{
-  font-size: 42px;
-}
-.carousel-indicators li{
-  background-color: #95a5a6;
+  color: #333;
 }
 .carouselText {
-  margin: 15% 0% 0% 10%;
-}
-.mt34{
-  margin: 34% 0% 0%;
+  margin: 130px 0px 0px;
 }
 .carousel-caption button {
   width: 50%;
-    padding: 12px 5px;
-    margin: 30px 0px 0px;
+  border-radius: 25px;
+  margin-top: 15px;
 }
 
 .info-icon {
@@ -422,7 +405,6 @@ color: #ecf0f1;
   background-image: url("../img/ASIC-Jumbotron.png");
   color: white;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 80px;
 }
 
 .Jumbotron-Header {
@@ -438,14 +420,16 @@ color: #ecf0f1;
 }
 .ML-Slider {
   text-align: left;
-  font-size: 1.25vw;
-  color: black;
-}
-.ML-Slider-text{
-  font-size: 20px;
-  line-height: 34px;
 }
 
+.ML-Slider-Right {
+  text-align: right;
+  padding-top: 30px;
+}
+
+section {
+  padding: 60px 0;
+}
 
 #tabs h6.section-title {
   color: black;
@@ -482,49 +466,229 @@ color: #ecf0f1;
   display: block;
 }
 .overlay {
-  height: 25.5vh;
+  height: 230px;
   width: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.carousel-item{
-  height: 93vh;
+.carousel-item {
+  height: 90vh;
 }
-.mt-95{
-  margin-top: 60%;
+.mt-95 {
+  margin-top: 95px;
 }
-.backgroundSupportImg{
- position: absolute;
- width: 500px;
- bottom: 3px;
- right: 15px;
- opacity: 0.2;
- z-index: -1;
-}
-.backgroundSupportImg1{
+.backgroundSupportImg {
   position: absolute;
-  width: 400px;
-  left: -210px;
-  opacity: 0.1;
+  width: 330px;
+  bottom: 94px;
+  right: 45px;
+  opacity: 0.2;
   z-index: -1;
-  top: 210px;
 }
-.backgroundSupportImg2{
+
+.Fourth-Section {
+  margin-top: 50px;
+}
+
+.Fifth-Section {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 968px) {
+  .info-icon {
+    float: left;
+  }
+}
+
+.ASIC-Enquire {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.ASIC-Enquire .card {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: #031f3f;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ASIC-Enquire .card:before {
+  content: "";
   position: absolute;
- width: 300px;
- bottom: 110px;
- right: 15px;
- opacity: 0.2;
- z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  clip-path: circle(150px at 80% 20%);
+  transition: 1.5s ease-in-out;
 }
-.b-lightgrey{
-  background-color: #fafafa;
+
+.ASIC-Enquire .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
 }
-.container-fluid-main{
-padding: 30px 15px;
+
+.ASIC-Enquire .card:after {
+  content: "ASIC";
+  position: absolute;
+  top: 30%;
+  left: -2%;
+  font-size: 10em;
+  font-weight: 800;
+  color: white;
 }
-.fluid-main-text .ML-Slider{
-  font-size: 1.8vw;
-  line-height: 44px;
+
+.ASIC-Enquire .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 262px;
+  transition: 1.5s;
+}
+
+.ASIC-Enquire .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.ASIC-Enquire .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.ASIC-Enquire .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1.5s;
+  z-index: 10;
+}
+
+.ASIC-Enquire .card:hover .contentBx {
+  height: 210px;
+}
+
+.ASIC-Enquire .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.Tab-Header-Right {
+  text-align: right;
+  color: black !important;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+}
+
+.row {
+  padding-bottom: 50px;
+}
+
+.Tab-Para {
+  font-size: 1.3vw;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.Tab-Para-Right {
+  font-size: 1.3vw;
+  padding-top: 50px;
+  text-align: right;
+}
+
+.Exp-Team {
+  height: 420px;
+}
+
+.BTable {
+  padding-top: 10px;
+}
+
+.table-dark {
+  background-color: #001f3f;
+}
+
+.Box {
+  width: 500px;
+  border-bottom: 20px solid #031f3f;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.Box h2 {
+  color: #fff;
+  background: #031f3f;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Box ul {
+  position: relative;
+  background: #031f3f;
+}
+
+.Box ul li {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+}
+
+.Box ul li:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  background: #031f3f;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.Box ul li span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #031f3f;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  transform: translateY(-20px);
+}
+
+.Box ul li:hover span {
+  background: #fff;
+  color: #031f3f;
+}
+
+.Automotive {
+  padding-top: 50px;
+}
+
+.Tab-Header-Application {
+  color: black !important;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  padding-bottom: 20px;
 }
